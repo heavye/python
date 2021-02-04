@@ -1,0 +1,18 @@
+number = int
+pos = 0
+neg = 0
+tot = 0
+while number != 0:
+    number = float(input("Enter a number. '0' to end: "))
+    if number > 0:
+        pos +=1
+    elif number == 0:
+        break
+    else:
+        neg +=1
+    tot += number
+
+print("POSITIVE NUMBERS: " + str(pos))
+print("NEGATIVE NUMBERS: " + str(neg))
+print("Total value sum: " + str(tot))
+print("Average : " + str(tot/(pos + neg)))
