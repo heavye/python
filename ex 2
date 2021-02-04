@@ -1,0 +1,16 @@
+tut = 10000
+
+years = 10
+
+for i in range(1,years):
+    tut = tut * 1.05
+
+#after ten years the yearly is tut.
+print("after ten years the tution fee is: " + str( tut))
+total = 0
+for i in range(4):
+    tut = tut * 1.05
+    total += tut
+print("after 14 years the tution fee is: " + str( tut))
+
+print("after ten years plus the tution fee is: " + str( total))
