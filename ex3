@@ -1,0 +1,14 @@
+no = eval(input("Input the number of students: "))
+max = 0
+max2 = 0
+for i in range(no):
+    grade = eval(input(("Input the grade for the4 :" + str(i) + " Studend: ")))
+    if grade > max:
+        max2 = max
+        max = grade
+    if max2 < grade < max:
+        max2 = grade
+
+print("number of student : " + str(no))
+print("high Grade : " + str(max))
+print("second Grade : " + str(max2))
