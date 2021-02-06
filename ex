@@ -1,0 +1,9 @@
+def sumDigits(n):
+    x = len(str(n))
+    sum = 0
+    for i in range(x):
+       sum += n % 10
+       n = n // 10
+    return sum
+
+print(sumDigits(123))
