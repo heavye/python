@@ -1,0 +1,16 @@
+def reverse(number):
+    trick = str(number)
+    rev = int(trick[::-1])
+    print("the reverse of: " + trick + " is " + str(rev))
+    print("Adding a number and its reverse: " + str((number + rev)))
+    return rev
+
+
+def checkreversbility():
+    number = eval(input("write a number: "))
+    v = reverse(number)
+    if number == v:
+        print("YES REVERSIBLE")
+    else:
+        print("NO IRRVERSIBLE")
+checkreversbility()
