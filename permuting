@@ -1,0 +1,12 @@
+from itertools import permutations
+
+
+def permutey():
+    word = str((input("Enter a word: ")))
+    r = eval(input("Enter the length of each word: "))
+    perms = [''.join(p) for p in permutations(word, r)]
+    for i in range(len(perms)):
+        print((perms[i]))
+
+
+print(permutey())
