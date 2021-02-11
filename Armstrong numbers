@@ -1,0 +1,16 @@
+def arm(number):
+    #number = int(input("PUT A NUMBER: "))
+    check = number
+    n = len(str((number)))
+    result = 0
+
+    for i in range(n):
+        result += (number % 10)**n
+        number = number // 10
+    if check == result:
+        print(str(check) + "  ARM NUMBER FOUND!")
+
+    return result
+
+for i in range(1001):
+    arm(i)
